@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="javascript">
+        var ws = new WebSocket('ws://192.168.2.234:3333');
+        ws.onmessage = function (data) {
+           console.log(data.data);
+        }
+    </script>
+</body>
+</html>
